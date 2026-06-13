@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IncubateAI | Launch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        zinc: {
+                            50: '#fafafa',
+                            300: '#d4d4d8',
+                            400: '#a1a1aa',
+                            500: '#71717a',
+                            600: '#52525b',
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-zinc-50 overflow-x-hidden font-sans selection:bg-zinc-800 selection:text-white antialiased relative" style="background-image: url('/hero_background.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+    <!-- Background Overlay for readability -->
+    <div class="fixed inset-0 bg-zinc-950/85 z-0 pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full h-16 border-b border-zinc-800/50 flex justify-between items-center px-6 bg-zinc-950/50 backdrop-blur-md z-50">
+        <div class="text-base font-semibold tracking-wide flex items-center gap-2">
+            <svg class="w-6 h-6 text-zinc-100" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            IncubateAI
+        </div>
+        <div class="flex items-center gap-4 text-sm">
+            <a href="https://github.com" target="_blank" class="text-zinc-400 hover:text-white transition-colors hidden sm:block">GitHub</a>
+            <a href="/app" class="bg-white text-zinc-950 px-4 py-2 rounded-md font-medium hover:bg-zinc-200 active:scale-95 transition-all shadow-sm">Launch App</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden z-10">
+        
+        <!-- Subtle Glow Background -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-zinc-800/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative animate-fade-in-up">
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500">
+                Skip the boilerplate.<br/><span class="text-white">Ship in 90 seconds.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
+                You know how building a quick MVP landing page takes all weekend? We fixed that. Just drop in your idea, and a team of AI agents will do the market research, write the copy, and hand you clean Tailwind HTML.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="/app" class="bg-white text-zinc-950 px-10 py-5 rounded-lg text-xl font-bold hover:bg-zinc-200 active:scale-95 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(255,255,255,0.2)] flex items-center gap-3 group">
+                    Build something cool
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- The Crew Grid -->
+        <div class="max-w-5xl mx-auto mt-32 relative z-10">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-12 text-center text-zinc-100">Meet your new team</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Orchestrator -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/80 p-8 rounded-xl hover:border-zinc-700 transition-colors animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-zinc-100 mb-3">1. The Project Manager</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm">
+                        It takes your rough idea, figures out exactly what needs to be done, and hands out the tasks to the rest of the crew.
+                    </p>
+                </div>
+
+                <!-- Researcher -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/80 p-8 rounded-xl hover:border-zinc-700 transition-colors animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-zinc-100 mb-3">2. The Market Expert</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm">
+                        It jumps on DuckDuckGo to figure out who your audience actually is and what your competitors are doing, so we aren't just guessing.
+                    </p>
+                </div>
+
+                <!-- Copywriter -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/80 p-8 rounded-xl hover:border-zinc-700 transition-colors animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-zinc-100 mb-3">3. The Wordsmith</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm">
+                        It takes the research and spins up catchy brand names, landing page copy, and even a few social posts to get you started.
+                    </p>
+                </div>
+
+                <!-- Engineer -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/80 p-8 rounded-xl hover:border-zinc-700 transition-colors animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-zinc-100 mb-3">4. The Developer</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm">
+                        It takes all the copy and wires it up into a clean, responsive Tailwind CSS file you can just copy-paste and deploy.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="max-w-5xl mx-auto mt-40 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Here's how it goes down</h2>
+                <p class="text-lg text-zinc-400">No complicated setup. Just tell us what you want to build.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-zinc-800 via-zinc-600 to-zinc-800 z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-zinc-900 border border-zinc-700 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-6 shadow-lg shadow-black/50">1</div>
+                    <h3 class="text-xl font-semibold text-zinc-100 mb-3">Pitch the idea</h3>
+                    <p class="text-zinc-400 text-sm">Got a shower thought for a new SaaS or newsletter? Just type it in.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center mt-10 md:mt-0">
+                    <div class="w-20 h-20 bg-zinc-900 border border-zinc-700 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-6 shadow-lg shadow-black/50">2</div>
+                    <h3 class="text-xl font-semibold text-zinc-100 mb-3">They do the heavy lifting</h3>
+                    <p class="text-zinc-400 text-sm">Grab a coffee while the crew researches the market, writes the copy, and writes the code.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center mt-10 md:mt-0">
+                    <div class="w-20 h-20 bg-zinc-900 border border-zinc-700 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-6 shadow-lg shadow-black/50">3</div>
+                    <h3 class="text-xl font-semibold text-zinc-100 mb-3">Ship it</h3>
+                    <p class="text-zinc-400 text-sm">You get a beautiful, ready-to-deploy HTML file and a full research doc. Just hit publish.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="max-w-5xl mx-auto mt-40 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6">Why we built this</h2>
+                    <p class="text-lg text-zinc-400 mb-8 leading-relaxed">
+                        Honestly, starting a project from scratch is exhausting. Writing placeholder text, setting up a basic navbar, figuring out the color scheme... it kills the momentum. This tool is basically a cheat code to skip the boring stuff and get straight to shipping.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-zinc-300">Actually researches your market live (no outdated training data)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-zinc-300">Doesn't hallucinate random JSON structures</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-zinc-300">Outputs clean, un-messy Tailwind CSS</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 backdrop-blur-sm shadow-2xl relative">
+                    <div class="absolute -top-4 -right-4 bg-zinc-800 text-xs px-3 py-1 rounded-full text-zinc-300 border border-zinc-700 shadow-lg">Generated Code Example</div>
+                    <pre class="text-xs text-emerald-400 font-mono overflow-x-auto"><code>&lt;div class="bg-zinc-950 text-white"&gt;
+  &lt;header class="flex justify-between p-6"&gt;
+    &lt;h1 class="font-bold text-xl"&gt;Acme Corp&lt;/h1&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main class="text-center py-20"&gt;
+    &lt;h2 class="text-4xl font-bold mb-4"&gt;
+      Revolutionizing the Industry
+    &lt;/h2&gt;
+  &lt;/main&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="max-w-4xl mx-auto mt-40 mb-20 text-center relative z-10 bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-12 backdrop-blur-md">
+            <h2 class="text-4xl font-bold text-white mb-6">Let's build something</h2>
+            <p class="text-zinc-400 text-lg mb-10">Stop messing around with lorem ipsum and let the crew do the heavy lifting.</p>
+            <a href="/app" class="inline-flex bg-white text-zinc-950 px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-200 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] items-center gap-2 group">
+                Give it a spin
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-zinc-800/50 py-10 mt-20">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-zinc-600 text-sm gap-4">
+            <span>&copy; 2026 IncubateAI</span>
+            <div class="flex gap-4">
+                <a href="/terms" class="hover:text-zinc-400 transition-colors">Terms</a>
+                <a href="/privacy" class="hover:text-zinc-400 transition-colors">Privacy</a>
+                <a href="https://github.com" target="_blank" class="hover:text-zinc-400 transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

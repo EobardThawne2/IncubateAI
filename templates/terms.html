@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | IncubateAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        zinc: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-zinc-50 overflow-x-hidden font-sans selection:bg-zinc-800 selection:text-white antialiased relative">
+    
+    <!-- Background Overlay -->
+    <div class="fixed inset-0 bg-zinc-950/85 z-0 pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full h-16 border-b border-zinc-800/50 flex justify-between items-center px-6 bg-zinc-950/50 backdrop-blur-md z-50">
+        <a href="/" class="text-base font-semibold tracking-wide flex items-center gap-2 hover:text-zinc-300 transition-colors">
+            <svg class="w-6 h-6 text-zinc-100" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            IncubateAI
+        </a>
+        <div class="flex items-center gap-4 text-sm">
+            <a href="/app" class="bg-white text-zinc-950 px-4 py-2 rounded-md font-medium hover:bg-zinc-200 active:scale-95 transition-all shadow-sm">Launch App</a>
+        </div>
+    </header>
+
+    <main class="relative pt-32 pb-20 px-6 max-w-3xl mx-auto z-10 text-zinc-300 leading-relaxed">
+        <h1 class="text-4xl font-bold tracking-tighter mb-8 text-white">Terms of Service</h1>
+        
+        <p class="mb-6">Last updated: June 2026</p>
+
+        <h2 class="text-2xl font-semibold text-white mt-10 mb-4">1. Agreement to Terms</h2>
+        <p class="mb-6">By viewing or using this website, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.</p>
+
+        <h2 class="text-2xl font-semibold text-white mt-10 mb-4">2. Use License</h2>
+        <p class="mb-6">The generated code, landing pages, and markdown copy produced by IncubateAI are provided for your personal or commercial use. You are responsible for ensuring the generated assets comply with applicable copyright and trademark laws.</p>
+
+        <h2 class="text-2xl font-semibold text-white mt-10 mb-4">3. Disclaimer</h2>
+        <p class="mb-6">The materials on this website and the generated output from IncubateAI are provided on an 'as is' basis. We make no warranties, expressed or implied, regarding the accuracy, reliability, or business viability of the AI-generated research, copy, or code.</p>
+
+        <h2 class="text-2xl font-semibold text-white mt-10 mb-4">4. Limitations</h2>
+        <p class="mb-6">In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use IncubateAI.</p>
+
+        <h2 class="text-2xl font-semibold text-white mt-10 mb-4">5. API Usage</h2>
+        <p class="mb-6">You are required to supply your own API keys (Groq, etc.) if running the project locally. Misuse or abuse of the third-party endpoints may result in IP restrictions by the respective API providers.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-zinc-800/50 py-10 mt-10">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center text-zinc-600 text-sm">
+            <span>&copy; 2026 IncubateAI</span>
+            <div class="flex gap-4">
+                <a href="/terms" class="hover:text-zinc-400 transition-colors">Terms</a>
+                <a href="/privacy" class="hover:text-zinc-400 transition-colors">Privacy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
